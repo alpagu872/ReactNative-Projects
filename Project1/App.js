@@ -56,6 +56,19 @@ const AppFlexStructure = () => { //Arrow function olayı
 
 };
 
+
+const AppCard = () => {
+  <SafeAreaView>
+    <View style={styles.container}>
+      <View style={styles.card_container}>
+      <Text> Eddard Stark</Text>
+      <Text> Winter is coming.</Text>
+      </View>
+    </View>
+  </SafeAreaView>
+
+}
+
 const styles = (StyleSheet.create({
   container1: {
     margin: 10,
@@ -66,7 +79,19 @@ const styles = (StyleSheet.create({
 
   container: {
     flex: 1,
+    backgroundColor:"#e0e0e0"
   },
+
+  card_container: {
+    
+    backgroundColor: "white",
+  },
+
+  card_body:{
+    padding:10
+  },
+
+
   upper_view_container: {
     flex: 1,
     margin: 10,
@@ -83,4 +108,4 @@ const styles = (StyleSheet.create({
   },
 }))
 
-export default AppFlexStructure;
+export default AppCard;
